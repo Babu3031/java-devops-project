@@ -3,16 +3,10 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = 'docker-creds'
-        DOCKER_IMAGE = 'your-dockerhub-username/java-devops-app'
+        DOCKER_IMAGE = 'babu3031/java-devops-app'   // change to your username
     }
 
     stages {
-
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/your-username/java-devops-project.git'
-            }
-        }
 
         stage('Build') {
             steps {
