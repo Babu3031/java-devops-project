@@ -3,16 +3,14 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = 'docker-creds'
-        DOCKER_IMAGE = 'babu3031/java-devops-app'   // change to your username
+        DOCKER_IMAGE = 'babu3031/java-devops-app'
     }
 
     stages {
 
         stage('Build') {
             steps {
-                dir('app') {
-                    sh 'mvn clean package'
-                }
+                sh 'mvn clean package'
             }
         }
 
