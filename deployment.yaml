@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: java-container
-        image: your-dockerhub-username/java-devops-app:latest
+        image: babu3031/java-devops-app:latest
         ports:
         - containerPort: 8080
