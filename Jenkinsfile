@@ -8,6 +8,12 @@ pipeline {
 
     stages {
 
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/Babu3031/java-devops-project.git'
+            }
+        }
+
         stage('Build') {
             steps {
                 sh 'mvn clean package'
